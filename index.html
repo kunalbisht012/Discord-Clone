@@ -6,92 +6,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Discord Clone</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="./assets/discord-mascot.png">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            overflow-x: hidden;
+        }
+            
+            
+        
+    </style>
+    
 </head>
 <body class="overflow-x-hidden">
     <!-- Nav bar -->
-    <nav class="flex bg-[#404eed] justify-around items-center mx-auto py-7">
+    <div class="bg-[#404eed] md:flex md:justify-between py-10 px-5 flex justify-between xl:justify-around ">
         
 
-            <a href="#"><img src="./assets/logo.svg" class=""></a>
-            <div class=" flex flex-row space-x-10">
-                <a href="#" class="text-white hover:underline"> Download</a>
-                <a href="#" class="text-white hover:underline"> Nitro</a>
-                <a href="#" class="text-white hover:underline"> Discover</a>
-                <a href="#" class="text-white hover:underline"> Safety</a>
-                <a href="#" class="text-white hover:underline"> Support</a>
-                <a href="#" class="text-white hover:underline"> Blog</a>
-                <a href="#" class="text-white hover:underline"> Careers</a>
+            <div><a href="#"><img src="./assets/logo.svg" class=""></a></div>
+            <ul class=" lg:flex-rows lg:flex space-x-6 cursor-pointer hidden   ">
+                <li><a href="#" class="text-white hover:underline"> Download</a></li>
+                <li><a href="#" class="text-white hover:underline"> Nitro</a></li>
+                <li><a href="#" class="text-white hover:underline"> Discover</a></li>
+                <li><a href="#" class="text-white hover:underline"> Safety</a></li>
+                <li><a href="#" class="text-white hover:underline"> Support</a></li>
+                <li><a href="#" class="text-white hover:underline"> Blog</a></li>
+                <li><a href="#" class="text-white hover:underline"> Careers</a></li>
+            </ul>
+            <div class="flex flex-row">
+                <button class=" bg-white rounded-[40px] text-[14px] py-[7px] px-[16px] hover:shadow-[hsla(0,3%,6%,0)] hover:text-blue-700">Login</button>
+            <div class="lg:hidden mx-5 block">
+                <div class="w-[35px] h-[5px] bg-white my-[6px]"></div>
+                <div class="w-[35px] h-[5px] bg-white my-[6px]"></div>
+                <div class="w-[35px] h-[5px] bg-white my-[6px]"></div>
             </div>
-            <div class="">
-                <button class=" bg-white rounded-[40px] text-[14px] py-[7px] px-[16px] hover:shadow-zinc-900 hover:text-blue-700">Login</button>
             </div>
-
-                
-                
-        
-        
-    </nav>
-
-
+            
+    </div>
+              
     <!-- Hero Section -->
-    <div class="bg-[#404eed] h-max relative">
-        <div class=" mx-auto my-0 w-[50%] pt-20 pb-12 relative z-10 ">
-            <h1 class="text-white font-extrabold text-center text-7xl">IMAGINE A PLACE..</h1><br>
-            <p class="text-white font-sans text-xl text-center mx-auto ">
+    <div class="bg-[#404eed] relative overflow-y-hidden">
+        <div class="   lg:w-[50%]  lg:pt-20 md:pb-12 md:relative z-10 px-5 md:w-[70%] lg:mx-auto ">
+            <p class="text-white font-extrabold lg:text-center lg:text-[70px] md:text-[56px] text-[28px] self-start tracking-widest md:tracking-normal">IMAGINE A PLACE..</p>
+            <p class="text-white font-sans text-[16px] lg:text-center mx-auto lg:text-[20px] self-start  my-3">
             ...where you can belong to a school club, a gaming group, or a worldwide art community. Where just you and a handful of friends can spend time together. A place that makes it easy to talk every day and hang out more often
             </p>
-            <div class="text-center mx-3 my-16 ">
-            <button class=" bg-white py-[12px] px-[32px] rounded-[28px] hover:text-blue-500 hover:shadow-2xl text-[20px] "><img src="./assets/button-1.svg" class="w-6 h-6 float-left mt-1 mr-1"><span>Download for Windows</span></button> 
-            <button class="bg-[#23272a] text-white py-[12px] px-[32px] rounded-[28px] hover:shadow-xl text-[20px] ml-4 transition ease-in-out delay-100 hover:bg-[rgb(54,62,68)] duration-75">Open Discord in your Browser</button>
+            <div class="lg:text-center mx-3 md:my-16 mt-5  ">
+            <button class=" bg-white py-[12px] px-[32px] rounded-[28px] hover:text-blue-500 hover:shadow-2xl text-[20px] mr-5"><img src="./assets/button-1.svg" class="w-6 h-6 float-left mt-1 mr-1"><span>Download for Windows</span></button> 
+            <button class="bg-[#23272a] text-white py-[12px] px-[32px] rounded-[28px] hover:shadow-xl text-[20px]  transition ease-in-out delay-100 hover:bg-[rgb(54,62,68)] duration-75 mt-5">Open Discord in your Browser</button>
             </div>
 
         </div>
-        <img src="./assets/img-1.svg" class="  absolute bottom-[0%] right-[72%] z-10 overflow-hidden ">    
-        <img src="./assets/img-2.svg" class= "absolute bottom-[0%] left-[75%] z-10 overflow-x-hidden ">
-        <img src="./assets/img-4.svg" class=" absolute  bottom-[19%] scale-150 overflow-hidden">
+        <img src="./assets/img-1.svg" class="  md:absolute md:bottom-[0%] md:right-[72%] z-10 overflow-hidden mt-10 md:hidden lg:block ">    
+        <img src="./assets/img-2.svg" class= "absolute md:bottom-[0%] lg:left-[75%] md:left-[45%] z-10 overflow-x-hidden hidden md:block">
+        <img src="./assets/img-4.svg" class=" absolute  lg:bottom-8 lg:left-6 lg:scale-125 md:bottom-0 md:right-[20%] md:scale-100  overflow-hidden hidden md:block">
         
         
     </div>
 
         
     <!-- Section-1 -->
-    <div class="flex bg-white my-40 mx-auto justify-center content-center gap-10 flex-wrap">
-        <img src="./assets/img-5.svg" class="" loading="lazy">
-        <div class="w-[420px]  h-10 text-left">
-            <h1 class="text-[#23272a] font-bold text-left text-[48px]">Create an invite only place where you belong</h1>
-            <p class="text-[20px] ">Discord servers are organized into topic-based channels where you can collaborate, share, and just talk about your day without clogging up a group chat.</p>
+    <div class="flex md:flex-row flex-col bg-white my-[100px] mx-auto justify-center gap-10 ">
+        <img src="./assets/img-5.svg" class="md:max-w-[450px] lg:max-w-fit" loading="lazy">
+        <div class="md:w-[600px] xl:max-w-[400px] flex flex-col self-center w-full px-7 lg:px-0">
+            <h1 class="text-[#23272a] font-bold md:text-[48px] text-[30px] md:max-w-[500px] ">Create an invite only place where you belong</h1>
+            <p class="md:text-[20px] text-[16px]  ">Discord servers are organized into topic-based channels where you can collaborate, share, and just talk about your day without clogging up a group chat.</p>
         </div>
     </div>
 
 
     <!-- Section-2 -->
-    <div class="flex bg-[#f6f6f6] py-40 px-auto justify-center content-center gap-10 flex-wrap">
-        <div class="w-[420px]  h-10 text-left">
-            <h1 class="text-[#23272a] font-bold text-left text-[48px]">Where Hanging out is easy</h1>
-        <p class="text-[20px] ">Grab a seat in a voice channel when you’re free. Friends in your server can see you’re around and instantly pop in to talk without having to call.</p>
+    <div class="flex md:flex-row flex-col-reverse bg-[#f6f6f6] py-28 justify-center gap-10 ">
+        <div class="md:w-[420px] flex-col-reverse self-center w-full px-7 lg:px-0">
+            <h1 class="text-[#23272a] font-bold md:text-[48px] text-[30px] order-1">Where Hanging out is easy</h1>
+        <p class="md:text-[20px] text-[16px] ">Grab a seat in a voice channel when you’re free. Friends in your server can see you’re around and instantly pop in to talk without having to call.</p>
         </div>
-        <img src="./assets/img-6.svg" class="" loading="lazy">
+        <img src="./assets/img-6.svg" class="md:max-w-[450px] lg:max-w-fit" loading="lazy">
     </div>
     
    <!-- section-3 -->
-    <div class="flex bg-white my-40 mx-auto justify-center content-center gap-10 flex-wrap ">
-        <img src="./assets/img-7.svg" class="" loading="lazy">
-        <div class="w-[420px]  h-10 text-left">
-            <h1 class="text-[#23272a] font-bold text-left text-[48px]">From few to a fandom</h1>
-            <p class="text-[20px] ">Get any community running with moderation tools and custom member access. Give members special powers, set up private channels, and more.</p>
+    <div class="flex md:flex-row flex-col bg-white py-28 justify-center gap-10  ">
+        <img src="./assets/img-7.svg" class="md:max-w-[450px] lg:max-w-fit" loading="lazy">
+        <div class="md:w-[600px] xl:max-w-[400px] flex flex-col self-center w-full px-7 lg:px-0">
+            <h1 class="text-[#23272a] font-bold md:text-[48px] text-[30px] md:max-w-[500px]">From few to a fandom</h1>
+            <p class="md:text-[20px] text-[16px] ">Get any community running with moderation tools and custom member access. Give members special powers, set up private channels, and more.</p>
         </div>
 
     </div>
 
 
     <!-- Section-4 -->
-    <div class="bg-[#f6f6f6] flex justify-center content-center flex-col py-40 px-40">
-        <h1 class="text-center text-[#23272a] text-[40px] font-extrabold">RELIABLE TECH FOR STAYING CLOSE</h1>
-        <P class="text-center text-[20px] font-sans">Low-latency voice and video feels like you’re in the same room. Wave hello over video, watch friends stream their games, or gather up and have a drawing session with screen share.</P>
+    <div class="bg-[#f6f6f6] flex  flex-col py-40 lg:px-40 px-0 w-full">
+        <h1 class=" text-[#23272a] text-[40px] font-[900] lg:text-center px-5">RELIABLE TECH FOR STAYING CLOSE</h1>
+        <P class=" md:text-[20px] text-[16px] font-sans lg:text-center px-5">Low-latency voice and video feels like you’re in the same room. Wave hello over video, watch friends stream their games, or gather up and have a drawing session with screen share.</P>
         <img src="./assets/img-8.svg" class="" loading="lazy">
         <div class="relative flex content-center flex-col">
-            <div class="text-center text-[32px] font-bold ">Ready to start your journey?</div>
-        <button class=" bg-[#5865f2] self-center px-5 py-2 mt-4 rounded-3xl text-white text-[20px] items-baseline hover:bg-[#7882f3]  "> <span><img src="./assets/button-2.svg" class="h-6 w-6 float-left mt-1 mr-1"></span>  Download for Windows</button>
+            <div class=" text-[32px] font-bold mx-auto ">Ready to start your journey?</div>
+        <button class=" bg-[#5865f2] self-center flex flex-row px-5 py-2 mt-4 rounded-3xl text-white text-[20px] justify-center hover:bg-[#7882f3] w-[90%] md:w-fit "> <a><img src="./assets/button-2.svg" class="h-6 w-6  mt-1 mr-1 "></a>  Download for Windows</button>
         <img src="./assets/sparkel.svg" class="w-[531px] h-[49px] self-center absolute  ">
         </div>
     </div>
@@ -99,82 +112,75 @@
 
     <!-- Footer -->
     <footer>
-        <div class="p-20 bg-[#23272a]">
-            <div  class="mx-[7%]">
-
-                <div class="bg-[#23272a] h-max grid-cols-[450px_repeat(4,1fr)] gap-10 grid ">
-                    <div class="text-white">
-                        <h1 class="text-[32px] text-[#5865f2] font-extrabold">IMAGINE A <br> PLACE</h1>
-                <span><img src="./assets/flag.png" loading="lazy" class="float-left h-5 w-8 mr-4 mb-1"></span><span><select name="language" class="text-white bg-[#23272a] border-none ">
+        <div class="py-20 px-5 bg-[#23272a] md:px-[100px]">
+            <div  class="md:mx-[7%] flex md:flex-row flex-col gap-10 mx-0">
+                <div class="text-white bg-[#23272a] w-[500px]">
+                    <h1 class="text-[32px] text-[#5865f2] font-extrabold">IMAGINE A <br> PLACE</h1>
+                    <span><img src="./assets/flag.png" loading="lazy" class="float-left h-5 w-8 mr-4 mb-1"></span><span><select name="language" class="text-white bg-[#23272a] border-none ">
                     <option value="english">English,USA</option>
                     <option value="hindi">Hindi,INDIA</option>
-                </select></span>
-                <div class="flex mt-4">
-                    
-                    <a href="#"><img src="./assets/twitter.svg" class="mx-2"></a>
-                    <a href="#"><img src="./assets/instagram.svg" class="mx-2"></a>
-                    <a href="#"><img src="./assets/fb.svg" class="mx-2"></a>
-                    <a href="#"><img src="./assets/youtube.svg" class="mx-2"></a>
-                </div>
+                    </select></span>
                 
+                    <div class="flex mt-4">
+                        <a href="#"><img src="./assets/twitter.svg" class="mx-2"></a>
+                        <a href="#"><img src="./assets/instagram.svg" class="mx-2"></a>
+                        <a href="#"><img src="./assets/fb.svg" class="mx-2"></a>
+                        <a href="#"><img src="./assets/youtube.svg" class="mx-2"></a>
+                    </div>
                 </div>
-                <div class="text-white ">
-                    <ul>
-                        <li class="text-blue-500">Product</li>
-                        <li class="mt-3">Download</li>
-                        <li class="mt-3">Nitro </li>
-                        <li class="mt-3">Status</li>
-                    </ul>
-                </div>
-                <div class="text-white">
-                    <ul>
-                        <li class="text-blue-500">Company</li>
-                        <li class="mt-3">About</li>
-                        <li class="mt-3">Jobs</li>
-                        <li class="mt-3">Branding</li>
-                        <li class="mt-3">Newsroom</li>
-                    </ul>
-                </div>
-                <div class="text-white">
-                    <ul>
-                        <li class="text-blue-500">Resouces </li>
-                        <li class="mt-3">College</li>
-                        <li class="mt-3">Support </li>
-                        <li class="mt-3">Safety</li>
-                        <li class="mt-3">Blog </li>
-                        <li class="mt-3">Feedback</li>
-                        <li class="mt-3">Developers</li>
-                        <li class="mt-3">StreamKit</li>
-                        <li class="mt-3">Creators</li>
-                        <li class="mt-3">Community</li>
-                    </ul>
-                </div>
-                <div class="text-white">
-                    <ul>
-                        <li class="text-blue-500">Polices</li>
-                        <li class="mt-3">Terms</li>
-                        <li class="mt-3">Privacy</li>
-                        <li class="mt-3">Cokkie Settings</li>
-                        <li class="mt-3">Guidelines</li>
-                        <li class="mt-3">Acknowledgements</li>
-                        <li class="mt-3">Licences</li>
-                        <li class="mt-3">Moderation</li>
-                    </ul>
-                </div>
-                
-                
-                
-                </div><br>
-                <hr class=" "><br>  
-                <div class="bg-[#23272a] h-max flex place-content-between">  
-                    <img src="./assets/logo.svg" class="">
-                    <button class="bg-blue-500 text-white rounded-2xl px-5 py-1 hover:shadow-2xl  hover:shadow-black ">Sign Up</button>
-                </div>
-            </div>    
-        </div>
-        
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-10 ">
+                    <div class="text-white  ">
+                        <ul class="">
+                            <li class="text-blue-500 hover:underline cursor-pointer">Product</li>
+                            <li class="mt-3 hover:underline cursor-pointer">Download</li>
+                            <li class="mt-3 hover:underline cursor-pointer">Nitro </li>
+                            <li class="mt-3 hover:underline cursor-pointer">Status</li>
+                        </ul>
+                    </div>
+                    <div class="text-white">
+                        <ul>
+                            <li class="text-blue-500">Company</li>
+                            <li class="mt-3 hover:underline cursor-pointer">About</li>
+                            <li class="mt-3 hover:underline cursor-pointer">Jobs</li>
+                            <li class="mt-3 hover:underline cursor-pointer">Branding</li>
+                            <li class="mt-3 hover:underline cursor-pointer">Newsroom</li>
+                        </ul>
+                    </div>
+                    <div class="text-white">
+                        <ul>
+                            <li class="text-blue-500 hover:underline cursor-pointer">Resouces </li>
+                            <li class="mt-3 hover:underline cursor-pointer">College</li>
+                            <li class="mt-3 hover:underline cursor-pointer">Support </li>
+                            <li class="mt-3 hover:underline cursor-pointer">Safety</li>
+                            <li class="mt-3 hover:underline cursor-pointer">Blog </li>
+                            <li class="mt-3 hover:underline cursor-pointer">Feedback</li>
+                            <li class="mt-3 hover:underline cursor-pointer">Developers</li>
+                            <li class="mt-3 hover:underline cursor-pointer">StreamKit</li>
+                            <li class="mt-3 hover:underline cursor-pointer">Creators</li>
+                            <li class="mt-3 hover:underline cursor-pointer">Community</li>
+                        </ul>
+                    </div>
+                    <div class="text-white">
+                        <ul>
+                            <li class="text-blue-500 hover:underline cursor-pointer">Polices</li>
+                            <li class="mt-3 hover:underline cursor-pointer">Terms</li>
+                            <li class="mt-3 hover:underline cursor-pointer">Privacy</li>
+                            <li class="mt-3 hover:underline cursor-pointer">Cokkie Settings</li>
+                            <li class="mt-3 hover:underline cursor-pointer">Guidelines</li>
+                            <li class="mt-3 hover:underline cursor-pointer">Acknowledgements</li>
+                            <li class="mt-3 hover:underline cursor-pointer">Licences</li>
+                            <li class="mt-3 hover:underline cursor-pointer">Moderation</li>
+                        </ul>
+                    </div>
 
-            
+                </div>
+            </div> <br>
+            <hr class=" border-[hsl(240,59%,58%)]"><br>
+            <div class="bg-[#23272a] flex place-content-between">  
+                <img src="./assets/logo.svg" class="">
+                <button class="bg-blue-500 text-white rounded-2xl px-5 py-1 hover:shadow-2xl  hover:shadow-black ">Sign Up</button>
+            </div>   
+        </div>
     </footer>
 
     
@@ -184,3 +190,24 @@
 
 </body>
 </html>
+            
+            
+
+                
+            
+        
+        
+
+
+
+            
+                        
+                
+                
+                
+                
+
+                
+        
+
+            
